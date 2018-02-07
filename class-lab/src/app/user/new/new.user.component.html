@@ -1,0 +1,17 @@
+Create a new User
+<form>
+	<table>
+		<tr>
+			<td>First Name</td>
+			<td><input type="text" name="firstName" [(ngModel)]="user.firstName"/></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><input type="text" name="lastName" [(ngModel)]="user.lastName"/></td>
+		</tr>
+		<tr>
+			<td><button (click)="submit()">Submit</button></td>
+		</tr>
+	</table>
+	{{diagnostic}}
+</form>

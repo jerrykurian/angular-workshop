@@ -1,0 +1,14 @@
+Showing users at city {{name}}
+<table *ngIf="users.length>1">
+	<thead>
+		<th>First Name</th>
+		<th>Last Name</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let user of users">
+			<td>{{user.firstName}}</td>
+			<td>{{user.lastName}}</td>
+			<td><button (click)="selectUser(user)">Select</button></td>
+		</tr>
+	</tbody>
+</table>
